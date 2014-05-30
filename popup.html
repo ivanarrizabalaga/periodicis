@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	<link rel="stylesheet" type="text/css" href="css/rateit.css">	
+	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://ajax.aspnetcdn.com/ajax/jquery.templates/beta1/jquery.tmpl.min.js"></script>
+	<script src="js/jquery-ui-1.8.16.custom.min.js"></script>	
+	<script src="js/popup.js"></script>
+	<script src="js/visual.js"></script>
+</head>
+<body>
+
+<!-- 
+	{
+	url: "http://www.publico.es/deportes/391492/el-fichaje-de-cesc-ya-es-oficial",
+	date: ,
+	title: "El fichaje de Cesc ya es oficial",
+	keywords "[fichaje, Cesc, oficial],
+	clicks: 23456,
+	rate: 1..5
+	}
+-->
+<!--
+Template: Current News
+-->
+<script id="currentTpl" type="text/x-jquery-tmpl"> 
+			<h2><a href="#"><img src="${logo}" alt="${logo}" /></a></h2>				
+			<p>${description}</p>
+			<div class="stats">	
+				{{if SHOW_CLICKS}}		    
+				<p>${clicks}<strong> clicks</strong> </p>
+				{{/if}}
+				<p>
+					<label for="yrate">${i18nTpl("your_rate")}</label>
+					<input type="range" value="${rate}" step="0.25" id="yrate">
+					<div id="rateCurrent" class="rateit" data-rateit-backingfld="#yrate" data-rateit-resetable="false" data-rateit-ispreset="true"
+						data-rateit-min="0" data-rateit-max="5">
+					</div>
+				</p>
+			  </div>				
+</script>
+
+<!--
+Template: Related News, shown as slider
+-->
+<script id="relatedTpl" type="text/x-jquery-tmpl"> 
+
+						<article class="story">
+							<div class="info clearfix">
+								<time datetime="${date}" pubdate="pubdate">${formatDate(date)}</time> 
+								{{if author}} 
+								| <span class="author">${shortAndStyle(author,MAX_AUTHOR_SIZE)}</span> 
+								{{/if}}
+								<h2><a href="#"><img src="${logo}" alt="${source}" /></a></h2>
+							</div>
+							{{if media}}
+							<div class="photo clearfix">
+								<a href="${url}" target="_blank"><img src="${media.url}" alt="${media.title}" /></a>
+							</div>
+							{{/if}}
+							<div class="storyText">
+								<h3><a href="${url}" target="_blank">${title}</a></h3>
+								<p>${description}</p>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<div class="rateit" data-rateit-value="${rate}" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-max="5">									
+									</li>									
+									<li>
+										<p><a class="tags" target="_blank" href='http://www.google.es/search?tbm=nws&q=${common.join(" ")}'>${shortAndStyle(common.join(' '),MAX_TAGS_SIZE)}</a></p>
+									</li>
+									{{if SHOW_CLICKS}}
+									<li>
+										<p>${clicks}<strong> ${i18nTpl("clicks")}</strong> </p>
+									</li>
+									{{/if}}									
+								
+								</ul>
+							</div>
+						</article>
+</script>
+
+<!--
+Template: Top related News, shown static
+-->
+<script id="topTpl" type="text/x-jquery-tmpl"> 
+
+				<h1>${i18nTpl("top")}</h1>
+				<h2><a href="${source}"><img src="${logo}" alt="${source}" /></a></h2>
+				<!-- Título -->
+				<h3>
+					<a href="${url}" target="_blank">${title}</a>
+				</h3>
+				<p>${description}</p>		
+</script>
+<!--
+Template: Simply write
+-->
+<script id="writeTpl" type="text/x-jquery-tmpl"> ${data}</script>
+
+	<body>
+		<header>
+			<hgroup>
+				<h1><img src="images/periodicis_48.png" alt="Periodicis" /></h1>
+				<h2 id="title"></h2>
+			</hgroup>						
+		</header>
+		<section id="content" class="clearfix hidden">			
+			<article id="current" class="story current">
+			</article>
+			<div id="noneRelated" class="hidden">
+			</div>
+			<!-- En esta sección se muestran las noticias relacionadas se utiliza un slider -->
+			<section id="slider">
+				<h1><script>i18n("related")</script><span id="counter"></span></h1>
+				<div class="wrapper-paging">
+		          <ul>
+		            <li><a class="paging-back"><img src="images/previous.png"/></a></li>
+		            <li><a class="paging-this"><strong>0</strong><script>i18n("of")</script><span>x</span></a></li>
+		            <li><a class="paging-next"><img src="images/next.png"/></a></li>
+		          </ul>
+		        </div>
+				<div class="wrapper-panel">
+					<div id="slider_inner">
+					</div>
+				</div>
+			</section>
+			
+			<div id="top" class="story top-story">
+			</div>
+			
+		</section>
+		<footer>
+			<!-- Acciones del usuario. Esquina inferior izquierda -->
+			<ul class="user-actions">
+				<li><a class="register" href="http://www.periodicis.com"  target="blank"><script>i18n("register")</script></a></li>
+			</ul>
+			
+			<div class="copy">
+				<p><script>i18n("power")</script><a href="http://www.periodicis.com" target="blank"><script>i18n("name")</script></a>
+			</div>
+		</footer>
+		<script src="js/jquery.rateit.min.js" type="text/javascript"></script>		
+	</body>
+</html>

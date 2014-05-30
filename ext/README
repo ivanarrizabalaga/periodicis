@@ -1,0 +1,5 @@
+# Definidos estilos para mensaje "No hay noticias relacionadas con comentarios en la css"
+# Seleccionado un plugin jquery para valoracion de noticias: http://rateit.codeplex.com
+# Es bastante versatil y tiene bastante documentación y ejemplos. De cara al mantenimiento parece una buena opción
+# He modificado la css (rateit.css) para eliminar estilos de IE, Firefox y Opera. Si se utiliza en la otra parte habrá que tenerlo en cuenta.
+ 

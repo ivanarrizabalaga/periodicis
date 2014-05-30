@@ -1,0 +1,38 @@
+{
+  "name": "__MSG_name__",
+  "version": "0.1",
+  "description": "__MSG_description__",
+  "default_locale": "en",
+  
+  "browser_action": {
+    "default_icon": "images/periodicis_19.png",
+	"default_title": "__MSG_default_title__",
+	"popup": "popup.html"
+  },
+  
+  "content_scripts": [
+    {
+      "matches": ["http://www.marca.com/*",
+				  "http://www.mundodeportivo.com/*",
+				  "http://www.elmundo.es/*",
+				  "http://www.elpais.com/*",
+				  "http://www.20minutos.es/*",
+				  "http://www.abc.es/*",
+				  "http://www.larazon.es/*",
+				  "http://www.publico.es/*",
+				  "http://www.nytimes.com/*",
+				  "http://www.as.com/*"],
+      "js": ["js/content.js"]
+	  
+    }
+  ],
+  
+  "background_page": "background.html",
+  
+  "permissions": ["tabs","http://www.periodicis.com"],
+  "icons": {      
+      "16": "images/periodicis_16.png",
+      "48": "images/periodicis_48.png",
+	  "128": "images/periodicis_128.png"
+   }
+}

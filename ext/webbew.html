@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>News Rank</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<link href="rateit.css" rel="stylesheet" type="text/css">
+  		<script type="text/javascript" src="jquery-1.6.2.min.js"></script>
+		<script type="text/javascript" src="jquery-ui-1.8.16.custom.min.js"></script>	  		
+  		<script type="text/javascript" src="script.js"></script>
+	</head>
+	<body>
+		<header>
+			<hgroup>
+				<h1><img src="periodicis_48.png" alt="Periodicis" /></h1>
+				<h2 id="title">El Papa pide una respetuosa convivencia</h2>
+			</hgroup>
+		</header>
+		<section id="content" class="clearfix">
+			
+			<article class="story current">
+				<h2><a href="http://www.elpais.es"><img src="logo_elpais_x30.png" alt="El País" /></a></h2>
+				
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget porta quam. 
+					Proin et nisi libero, id laoreet urna ..
+				</p>
+				<!-- -->
+			  <div class="stats">			    
+			    <p>1987<strong> clicks</strong> </p>
+				<p><label for="yrate">Valoración:</label></p>
+			    <input type="range" value="0" step="0.25" id="yrate">
+				<div id="rateCurrent" class="rateit" data-rateit-backingfld="#yrate" data-rateit-resetable="false" data-rateit-ispreset="true"
+					data-rateit-min="0" data-rateit-max="5">
+				</div>
+			  </div>
+			    
+			</article>
+			
+			<!-- En esta sección se muestran las noticias relacionadas se utiliza un slider -->
+			<section id="slider">
+				<h1>Related stories: <span>12</span></h1>
+				<div class="wrapper-paging">
+		          <ul>
+		            <li><a class="paging-back">&lt;</a></li>
+		            <li><a class="paging-this"><strong>0</strong> of <span>x</span></a></li>
+		            <li><a class="paging-next">&gt;</a></li>
+		          </ul>
+		        </div>
+				<div class="wrapper-panel">
+					<div id="slider_inner">
+						<article class="story">
+							<div class="info clearfix">
+								<time datetime="DD.MM.AAAA" pubdate="pubdate">DD.MM.AAAA</time> | 
+								<span class="author">Autor</span> 
+								
+								<h2><a href="#"><img src="logo_publico_x30.png" alt="Publico.es" /></a></h2>
+							</div>
+							<div class="photo clearfix">
+								<img src="wall-street.jpg" alt="" />
+							</div>
+							<div class="storyText">
+								<h3>
+									<a href="#">La UE prometerá financiar un año más al menos a Grecia</a>
+								</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget porta quam. 
+									Proin et nisi libero, id laoreet urna ..
+								</p>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<p><strong>% Story:</strong> 78%</p>
+									</li>
+									<li>
+										<p><strong>Clicks:</strong> 1987</p>
+									</li>
+									<li>
+										<p><strong>Rate:</strong></p>
+										<div class="rateit" data-rateit-value="2.5" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-max="5">
+                    </div>
+									</li>
+								</ul>
+							</div>
+						</article>
+						<article class="story">
+							<div class="info clearfix">
+								<time datetime="DD.MM.AAAA" pubdate="pubdate">DD.MM.AAAA</time> | 
+								<span class="author">Autor</span> 
+								
+								<h2><a href="#"><img src="logo_larazon_x30.png" alt="Publico.es" /></a></h2>
+							</div>
+							<div class="photo clearfix">
+								<img src="luna-lunera.jpg" alt="" />
+							</div>
+							<div class="storyText">
+								<h3>
+									<a href="#">La UE prometerá financiar un año más al menos a Grecia</a>
+								</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget porta quam. 
+									Proin et nisi libero, id laoreet urna ..
+								</p>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<p><strong>% Story:</strong> 78%</p>
+									</li>
+									<li>
+										<p><strong>Clicks:</strong> 1987</p>
+									</li>
+									<li>
+										<p><strong>Rate:</strong></p>
+										<div class="rateit" data-rateit-value="2.5" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-max="5">
+                    </div>
+									</li>
+								</ul>
+							</div>
+						</article>
+						<article class="story">
+							<div class="info clearfix">
+								<time datetime="DD.MM.AAAA" pubdate="pubdate">DD.MM.AAAA</time> | 
+								<span class="author">Autor</span> 
+								
+								<h2><a href="#"><img src="logo_elpais_x30.png" alt="Publico.es" /></a></h2>
+							</div>
+							<div class="photo clearfix">
+								<img src="rubalcaba.jpg" alt="" />
+							</div>
+							<div class="storyText">
+								<h3>
+									<a href="#">La UE prometerá financiar un año más al menos a Grecia</a>
+								</h3>
+								<p>
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget porta quam. 
+									Proin et nisi libero, id laoreet urna ..
+								</p>
+							</div>
+							<div class="stats">
+								<ul>
+									<li>
+										<p><strong>% Story:</strong> 78%</p>
+									</li>
+									<li>
+										<p><strong>Clicks:</strong> 1987</p>
+									</li>
+									<li>
+										<p><strong>Rate:</strong></p>
+										<div class="rateit" data-rateit-value="2.5" data-rateit-ispreset="true" data-rateit-readonly="true" data-rateit-max="5">
+                    </div>
+									</li>
+								</ul>
+							</div>
+						</article>
+					</div>
+				</div>
+			</section>
+			
+			<div class="story top-story">
+				<h1>Top Story</h1>
+				<h2><a href="#"><img src="logo_elmundo_x50.png" alt="El Mundo.es" /></a></h2>
+				<!-- Título -->
+				<h3>
+					<a href="#">La Unión Europea se comprometerá a rescatar a Grecia por segunda vez</a>
+				</h3>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget porta quam. 
+					Proin et nisi libero, id laoreet urna ..
+				</p>
+			</div>
+			
+		</section>
+		<footer>
+			<!-- Acciones del usuario. Esquina inferior izquierda -->
+			<ul class="user-actions">
+				<li><a class="login" href="#">Login</a></li>
+				<li><a class="register" href="#">Register</a></li>
+			</ul>
+			
+			<div class="copy">
+				<p>Powered by <a href="#">Periodicis</a></p>
+			</div>
+		</footer>
+		<script src="jquery.rateit.min.js" type="text/javascript"></script>
+	</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "locale": {
+    "message": "es",
+    "description": "Locale"
+  },
+  "name": {
+    "message": "Periodicis",
+    "description": "Product name supporting extension"
+  },
+  "description": {
+    "message": "Leyendo la misma historia desde varios puntos de vista",
+    "description": "Extension description"
+  },  
+  "default_title": {
+    "message": "Periodicis! Relacionando historias",
+    "description": "Default alt to browser button"
+  },  
+  "no_stories": {
+    "message": "No hay historias relacionadas con la entrada actual",
+    "description": "Nada que mostrar"
+  },  
+  "clicks": {
+    "message": " clicks",
+    "description": "Number of visitors of this story"
+  },
+  "rate": {
+    "message": "Valoracion:",
+    "description": "Average rating of this story"
+  },  
+  "your_rate": {
+    "message": "Valora:",
+    "description": "Your own rating for this story"
+  },   
+  "simil_percentage": {
+    "message": "Relacion:",
+    "description": "How similar this story is to current"
+  },
+  "related": {
+    "message": "Relacionadas: ",
+    "description": "Related links to current stories"
+  },
+  "of": {
+    "message": " de ",
+    "description": " Pagination text"
+  },    
+  "top": {
+    "message": "Destacada",
+    "description": "Recommended link for this story"
+  },  
+  "login": {
+    "message": "Login",
+    "description": "Login button"
+  },  
+  "register": {
+    "message": "Registro",
+    "description": "Register button"
+  },      
+  "power": {
+    "message": "Hecho por ",
+    "description": "Branding footer"
+  },     
+  "productURL": {
+    "message": "http://www.periodicis.com",
+    "description": "Encoded URL to product"
+  }
+  
+}

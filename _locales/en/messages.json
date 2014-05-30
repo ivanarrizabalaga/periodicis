@@ -1,0 +1,67 @@
+{
+  "locale": {
+    "message": "en",
+    "description": "Locale"
+  },
+  "name": {
+    "message": "Periodicis",
+    "description": "Product name supporting extension"
+  },
+  "description": {
+    "message": "Reading the same story from different points of view",
+    "description": "Extension description"
+  },  
+  "default_title": {
+    "message": "Periodicis! Relating stories",
+    "description": "Default alt to browser button"
+  },  
+  "no_stories": {
+    "message": "No stories related to current tab",
+    "description": "Nothing to show yet"
+  },
+  "clicks": {
+    "message": " clicks",
+    "description": "Number of visitors of this story"
+  },
+  "rate": {
+    "message": "Rate:",
+    "description": "Average rating of this story"
+  },  
+  "your_rate": {
+    "message": "Rate it:",
+    "description": "Your own rating for this story"
+  },   
+  "simil_percentage": {
+    "message": "%25 Story:",
+    "description": "How similar this story is to current"
+  },
+  "related": {
+    "message": "Related stories: ",
+    "description": "Related links to current stories"
+  },
+  "of": {
+    "message": " of ",
+    "description": " Pagination text"
+  },  
+  "top": {
+    "message": "Top story",
+    "description": "Recommended link for this story"
+  }, 
+  "login": {
+    "message": "Login",
+    "description": "Login button"
+  },  
+  "register": {
+    "message": "Register",
+    "description": "Register button"
+  },    
+  "power": {
+    "message": "Powered by ",
+    "description": "Branding footer"
+  },     
+  "productURL": {
+    "message": "http%3a%2f%2fwww.periodicis.com",
+    "description": "Encoded URL to product"
+  }
+  
+}

@@ -1,0 +1,340 @@
+* {
+	margin: 0; padding: 0;
+}
+body {
+	font-family: arial, sans-serif;
+	font-size: 12px;
+	width: 800px;
+	overflow: visible;
+}
+header {
+	background: #2D2D2D;
+	border: 1px solid #2D2D2D;
+	border-radius: 6px;
+	padding: 2px 0;
+	margin-bottom: 5px;
+	height: 48px;
+}
+	header h1 {
+		float: left;
+		margin: 0 10px;
+	}
+	#title {
+		float: left;
+		display: block;
+		margin: 16px 0 0 0;
+		color: #C0C0C0;
+		font-size: 18px;
+		font-weight: normal;
+	}
+#slider, 
+.top-story {
+	position: relative;
+}
+#slider, #noneRelated {
+	float: left;
+	width: 398px;
+	overflow: hidden;
+	border: 1px solid silver;
+	-webkit-border-radius: 4px;
+}
+#slider h1,
+.top-story h1 {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	color: #FFFFFF;
+	background: #2D2D2D;
+	border: 1px solid;
+	-webkit-border-radius: 6px;
+	font: bold 12px Arial, Helvetica, sans-serif;
+	padding: 4px;
+}
+.top-story h1 {
+	border: 2px solid rgb(255,180,27)
+}
+#slider h1 span {
+	color: rgb(255,180,27)
+}
+/* Mensaje cuando no aparecen noticias*/
+#noneRelated {
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px; /* un poco menor que el de la noticia*/
+  width: 500px; /* este ancho se puede modificar hasta los 600px. Va en función de donde se quiera mostrar el mensaje */
+  padding-top: 50px; /* juega con este valor para que vaya más arriba o más abajo */
+}
+#content {
+	padding: 0 0 0px 0;
+}
+#slider .story {
+	padding: 10px 0;
+	margin: 0 5px;
+}
+.current, 
+.top-story {
+	float: left;
+	width: 185px;
+	margin: 0 5px;
+	padding: 10px 0;
+}
+.top-story {
+	border: 3px solid silver;
+	-webkit-border-radius: 4px;
+	float: right;
+	margin-right: 0;
+}
+h2 {
+	text-align: center;
+	margin-bottom: 5px;
+}
+h2 img {
+	max-width: 125px;
+}
+time {
+	margin-left: 5px;
+}
+.info h2 {
+	float: right;
+}
+time {
+	font-size: 11px;
+	color: #666;
+}
+h3 {
+	font-size: 12px;
+	padding: 0 0 0 10px;
+}
+.info {
+	clear: both;
+}
+/* Si hay foto y texto se lo reparten, sino texto completo */
+.photo+.storyText {
+	width: 185px;
+}
+.storyText {
+	float: right;
+}
+.photo {
+	float: left;
+	display: block;
+	padding: 2px 2px 1px 2px;
+	border: 1px solid #C0C0C0;
+	border-radius: 4px;
+	margin: 0 4px 5px;
+}
+.photo img {
+	max-width: 180px;
+	max-height: 200px;
+}
+.storyText p,
+.top-story p,
+.current p {
+	padding: 15px 10px 20px;
+}
+.top-story p:first-line {
+	padding-left: 30px;
+}
+.stats {
+	display: block;
+	clear: both;
+	height: 20px;
+	margin-bottom: 20px;
+	padding: 5px 0 0 10px;
+	border: 1px solid #C0C0C0;
+	border-radius: 6px;
+}
+	.stats p:first-child {
+		float: left;
+	}
+	.stats p {
+	  margin-right: 6px;
+	}
+	.stats ul {
+		list-style: none;
+	}
+	.stats li {
+		float: left;
+		padding: 0 0 0 10px;
+	}
+		.stats img {
+			vertical-align: middle;
+		}
+	.current .stats {
+	  border: none;
+	}
+	 .current .stats p {
+	   display: block;
+	   clear: both;
+	   width: 100%;
+	   padding: 0 0 5px 0;
+	 }
+	 .current .stats label {
+	   font-weight: bold;
+	 }
+footer {
+	background: #2D2D2D;
+	color: #C0C0C0;
+	clear: both;
+	margin-top: 10px;
+	height: 30px;
+	border: 1px solid #2D2D2D;
+	border-radius: 4px;
+}
+.user-actions {
+	float: left;
+	width: 200px;
+}
+	.user-actions li {
+		float: left;
+		display: block;
+	}
+	.user-actions a {
+		display: block;
+		padding: 8px 10px 5px 25px;
+		color: #C0C0C0;
+	}
+	.user-actions a:hover {
+		color: rgb(255,180,27)
+	}
+	.user-actions .login {
+		background: url(black_user_icon.png) no-repeat 0 4px;
+		-webkit-background-size: 20px;
+	}
+	.user-actions .register {
+		background: url(black_user_register.png) no-repeat 0 4px;
+		-webkit-background-size: 20px;
+	}
+	.user-actions .user {
+		background: url(black_default_avatar.png) no-repeat 0 4px;
+		-webkit-background-size: 20px;
+	}
+	.user-actions .tools {
+		background: url(black_tools_icon.png) no-repeat 0 4px;
+		-webkit-background-size: 20px;
+	}
+	.user-actions ul.opt {
+		display: none;
+	}
+footer form {
+	float: left;
+	width: 400px;
+	padding: 5px 0 0 0;
+}
+	footer label {
+		background: url(black_tags_icon.png) no-repeat 0 0px;
+		-webkit-background-size: 20px;
+		float: left;
+		display: block;
+		margin-right: 10px;
+		width: 20px;
+		height: 20px;
+	}
+	footer input[type="text"] {
+		width: 300px;
+		padding: 2px;
+		border: 1px solid;
+		border-radius: 6px;
+	}
+	footer input[type="submit"] {
+		border: none;
+		background-color: #2D2D2D;
+		color: #fff;
+		font: 12px Arial, Helvetica, sans-serif;
+		padding-left: 10px;
+	}
+.copy p {
+	text-align: right;
+	display: block;
+	padding: 8px 10px 0 0;
+}
+.copy a {
+	color: rgb(255,180,27);
+}
+footer a {
+	color: #FFFFFF;
+}
+.wrapper-paging {
+	display: none;
+	padding: 0 0 0 5px;
+	margin: 0 0 1px 1px;
+	position: absolute;
+	bottom: 0px;
+	left: 0;
+	background: #2D2D2D;
+	border: 1px solid #2D2D2D;
+	border-radius: 4px;
+}
+.wrapper-paging ul,
+.wrapper-paging li {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+.wrapper-paging ul {
+	float: left;
+	list-style-type: none;
+	text-align: left;
+}
+.wrapper-paging a {/*
+	border: 2px solid #FFFFFF;
+	border-radius: 3px;*/
+	display: inline-block;
+	color: #FFF;
+	cursor: pointer;
+	margin-right: 3px;
+	padding: 3px 7px;
+	text-decoration: none;
+}
+.wrapper-paging .paging-this {
+	cursor: default;
+	padding: 3px 0;
+}
+.wrapper-paging a:hover {
+	color: rgb(255,180,27);
+}
+.wrapper-paging .paging-back,
+.wrapper-paging .paging-next {
+	border-color: #015287;
+}
+.wrapper-paging .paging-this:hover {
+	background-color: #2D2D2D;
+	color: #FFF;
+}
+.wrapper-paging .paging-this b {
+	font-weight: normal;
+}
+.wrapper-paging .paging-disabled,
+.wrapper-paging .paging-disabled:hover {
+	cursor: auto;
+}
+.wrapper-panel {
+	clear: both;
+}
+/* utils */
+.hidden {
+	position: absolute;
+	margin-left: -10000px;
+	overflow: hidden;
+}
+/* Float clearing */
+.clearfix:after {
+  content: ".";
+  clear: both;
+  height: 0;
+  visibility: hidden;
+  display: block;
+}
+.clearfix {display: inline-block;}
+.clearfix {display: block;}
+
+div.rateit {
+  margin-top: -1px
+}
+.current div.rateit {
+  margin: 10px 0 0 10px;
+}
+.current div.rateit-range {
+  vertical-align: bottom;
+}
